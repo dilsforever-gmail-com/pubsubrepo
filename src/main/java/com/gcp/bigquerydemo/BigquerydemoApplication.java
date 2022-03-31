@@ -38,7 +38,7 @@ public class BigquerydemoApplication {
 		void sendToPubsub(Map log);
 	}
 
-	@Bean
+	/*@Bean
 	public PubSubInboundChannelAdapter messageChannelAdapter(
 			@Qualifier("pubsubInputChannel") MessageChannel inputChannel, PubSubTemplate pubSubTemplate) {
 		PubSubInboundChannelAdapter adapter = new PubSubInboundChannelAdapter(pubSubTemplate,
@@ -63,6 +63,6 @@ public class BigquerydemoApplication {
 					.get(GcpPubSubHeaders.ORIGINAL_MESSAGE, BasicAcknowledgeablePubsubMessage.class);
 			originalMessage.ack();
 		};
-	}
+	}*/
 
 }
